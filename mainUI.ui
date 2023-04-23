@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>410</width>
+    <height>343</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei UI</family>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>桌面窗口管理器</string>
+  </property>
+  <property name="toolTip">
+   <string>桌面窗口管理器是一款系统工具，利用它，您可以自定义桌面上窗口的大小、标题等信息，让您的桌面更具有个性色彩。</string>
+  </property>
+  <property name="statusTip">
+   <string>桌面窗口管理器是一款系统工具，利用它，您可以自定义桌面上窗口的大小、标题等信息，让您的桌面更具有个性色彩。</string>
+  </property>
+  <property name="whatsThis">
+   <string>桌面窗口管理器是一款系统工具，利用它，您可以自定义桌面上窗口的大小、标题等信息，让您的桌面更具有个性色彩。</string>
+  </property>
+  <property name="locale">
+   <locale language="Chinese" country="China"/>
+  </property>
+  <widget class="QPushButton" name="Find">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>150</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>查找标题所指的窗口。</string>
+   </property>
+   <property name="text">
+    <string>查找(&amp;F)...</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="inputTip">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>130</y>
+     <width>311</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>上面三个选项填一个即可，也可以三个都填</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>371</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>查找窗口</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>351</width>
+      <height>83</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="FindIn">
+     <item>
+      <widget class="QSplitter" name="_title">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="titleTip">
+        <property name="text">
+         <string>窗口标题：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="titleInput"/>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSplitter" name="_class">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="classTip">
+        <property name="text">
+         <string>窗口类：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="classInput"/>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSplitter" name="_handle">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="handleTip">
+        <property name="text">
+         <string>窗口句柄：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="handleInput">
+        <property name="placeholderText">
+         <string>句柄是一个独一无二的整数，用来标识窗口</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="setWindow">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>371</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>设置窗口</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>351</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="Set">
+     <item>
+      <widget class="QSplitter" name="title">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="titleT">
+        <property name="text">
+         <string>窗口标题：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="chT"/>
+       <widget class="QPushButton" name="Tset">
+        <property name="text">
+         <string>设置(&amp;S)</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSplitter" name="handle">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="hanleT">
+        <property name="text">
+         <string>窗口句柄：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="Hset">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>80</y>
+      <width>351</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="Ctrl">
+     <item>
+      <widget class="QPushButton" name="hide">
+       <property name="text">
+        <string>隐藏(&amp;H)</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mini">
+       <property name="text">
+        <string>最小化(&amp;M)</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="restore">
+       <property name="text">
+        <string>向下还原(&amp;R)</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="max">
+       <property name="text">
+        <string>最大化(&amp;A)</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>310</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭(&amp;C)</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>titleInput</tabstop>
+  <tabstop>classInput</tabstop>
+  <tabstop>handleInput</tabstop>
+  <tabstop>Find</tabstop>
+  <tabstop>chT</tabstop>
+  <tabstop>Tset</tabstop>
+  <tabstop>Hset</tabstop>
+  <tabstop>hide</tabstop>
+  <tabstop>mini</tabstop>
+  <tabstop>restore</tabstop>
+  <tabstop>max</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>310</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
